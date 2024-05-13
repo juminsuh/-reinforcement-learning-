@@ -1,4 +1,4 @@
-# DL_session
+# Reinforcement Learning
 
-## DL_session 원격 저장소 활용하기:)
+## RL code 
 
