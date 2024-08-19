@@ -36,7 +36,7 @@ $\theta$는 신경망의 파라미터로, 이에 따라 정책이 결정된다.
 - 누적 보상: $J(\theta)$=$v_{\pi_{\theta}}(s_{0})$=처음 상태$(s_{0})$에서 정책 $v_{\pi_{\theta}}$을 따라갔을 때 얻는 가치
 - 정책 그래디언트 업데이트
 
-![Untitled](4%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1_%E1%84%80%E1%85%A1%E1%86%BC%E1%84%92%E1%85%AA%E1%84%92%E1%85%A1%E1%86%A8%E1%84%89%E1%85%B3%E1%86%B8%20207676f7cf8f4bd2a9f2e3b0ebe0a851/Untitled.png)
+![Untitled](https://github.com/user-attachments/assets/2d1be7e6-066f-45b9-aff1-d2cfe449b4af)
 
 $$
 ∇_{\theta}J(\theta) = E_{\pi_{\theta}}[∇_{\theta}log(\pi_{\theta}(a|s))*q_{\pi}(s,a)]
