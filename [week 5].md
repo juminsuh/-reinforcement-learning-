@@ -6,7 +6,7 @@
 
 Q-learning은 각 상태에 따른 행동 가치를 테이블 형식으로 저장하는 강화학습 방법론이다. 그러나 테이블 형식은 에피소드가 무한하거나 길 때 사용이 제한된다. DQN(Deep Q-Learning)은 인공 신경망을 이용해 큐함수에 근사하여 테이블 형식의 한계를 극복했다. 
 
-![Untitled](5%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1_%E1%84%80%E1%85%A1%E1%86%BC%E1%84%92%E1%85%AA%E1%84%92%E1%85%A1%E1%86%A8%E1%84%89%E1%85%B3%E1%86%B8%20a349a8c553bf4a4fbe129ecbd78eb865/Untitled.png)
+![Untitled](https://github.com/user-attachments/assets/43d96949-3594-4a85-ac67-195498462604)
 
 ## DQN의 main idea: Replay Memory
 
@@ -18,7 +18,7 @@ DQN은 경험 리플레이를 한다는 특징이 있다. 경험 리플레이란
     
     메모리가 꽉 차면 맨 처음 들어온 순서대로 데이터가 차례대로 삭제된다. 에피소드가 증가할수록 메모리에는 양질의 데이터가 저장된다. 
     
-    ![Untitled](5%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1_%E1%84%80%E1%85%A1%E1%86%BC%E1%84%92%E1%85%AA%E1%84%92%E1%85%A1%E1%86%A8%E1%84%89%E1%85%B3%E1%86%B8%20a349a8c553bf4a4fbe129ecbd78eb865/Untitled%201.png)
+   ![Untitled 1](https://github.com/user-attachments/assets/f7068e2c-1dfc-46fe-930e-0fa1c2557bb6)
     
 2. **샘플 간의 시간적 상관관계 제거**
     
@@ -45,7 +45,7 @@ $$
 MSE=(ans-pred)^2=( R_{t+1}+\gamma max_{a’}Q(s’,a’,\theta^-)-Q(s,a, \theta))^2
 $$
 
-![Untitled](5%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1_%E1%84%80%E1%85%A1%E1%86%BC%E1%84%92%E1%85%AA%E1%84%92%E1%85%A1%E1%86%A8%E1%84%89%E1%85%B3%E1%86%B8%20a349a8c553bf4a4fbe129ecbd78eb865/Untitled%202.png)
+![Untitled 2](https://github.com/user-attachments/assets/d2b4de6b-c54e-4d0e-ba00-e19b69d29e0a)
 
 ## Q-learning→Double Q-learning
 
@@ -61,7 +61,7 @@ DQN에서는 다음 상태에서 최대의 행동 가치를 갖는 행동을 고
 
 DDQN에서는 다음 상태에서 최대의 행동 가치를 갖는 행동을 반환한 뒤 다시 그 상태과 그 상태에서의 행동 가치를 구한다. 
 
-![Untitled](5%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1_%E1%84%80%E1%85%A1%E1%86%BC%E1%84%92%E1%85%AA%E1%84%92%E1%85%A1%E1%86%A8%E1%84%89%E1%85%B3%E1%86%B8%20a349a8c553bf4a4fbe129ecbd78eb865/Untitled%203.png)
+![Untitled 3](https://github.com/user-attachments/assets/9c7152f3-68ea-404d-9157-29c643d8c0c1)
 
 ## 환경의 기본 형태
 
