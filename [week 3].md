@@ -36,7 +36,7 @@
 - off-Policy이다. 행동 정책과 학습 정책을 분리하여 SARSA의 한계를 극복했다. $Q(s,a)←Q(s,a)+\alpha (R_{t+1}+\gamma max_{a}Q(s',a)-Q(s,a))$로 행동 가치 함수를 업데이트한다. 즉 현재 상태(s)에서 행동(a)를 해서 넘어간 다음 상태(s’)에서 행동할 때, SARSA처럼 $\varepsilon$-탐욕 정책을 따르는 것이 아닌 상태 s’에서 가장 큰 큐함수를 선택한다. 따라서 s,a,r,s’만으로도 학습할 수 있다.
 - SARSA는 벨만 기대 방정식을, Q-러닝은 벨만 최적 방정식을 이용한다.
 
----
+
 
 ## 문제
 
@@ -78,7 +78,7 @@
     -기존의 탐욕정책은 무조건 가장 높은 큐함수를 지닌 행동만을 취했다. 그러나 $\varepsilon$-탐욕정책은 $\varepsilon$%의 확률로 엉뚱한 행동을 하고 (100-$\varepsilon$)%의 확률로 탐욕적으로 행동한다는 점에서 기존의 탐욕 정책과 차이가 있다. 
     
 
----
+
 
 ## 질문
 
@@ -109,7 +109,7 @@
     반환값이다. 따라서 정책신경망의 업데이트는 한 에피소드가 끝난 이후에 실행된다. 
     
 
----
+
 
 Class_with_Pytorch_%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf](https://github.com/user-attachments/files/16655456/Class_with_Pytorch_.EB.B0.9C.ED.91.9C.EC.9E.90.EB.A3.8C.pdf)
 
